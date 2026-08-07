@@ -10,5 +10,3 @@ if (!url || !anonKey) {
 }
 
 export const supabase = createClient(url, anonKey)
-
-export const PHOTOS_BUCKET = 'photos'

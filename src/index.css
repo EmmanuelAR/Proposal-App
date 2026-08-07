@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,13 +10,25 @@ body,
 }
 
 body {
-  @apply font-sans bg-blush-50 text-blush-950 transition-colors duration-300;
-}
-
-.dark body {
-  @apply bg-[#1a0a10] text-blush-100;
+  @apply font-sans bg-blush-50 text-blush-950;
 }
 
 ::selection {
   @apply bg-blush-300 text-blush-950;
+}
+
+@layer components {
+  /* Reusable glass surface — used for cards, tiles, buttons, nav */
+  .glass {
+    @apply border border-white/60 bg-white/45 shadow-[0_8px_32px_rgba(191,16,70,0.14)] backdrop-blur-xl;
+  }
+  .glass-strong {
+    @apply border border-white/70 bg-white/60 shadow-[0_8px_32px_rgba(191,16,70,0.16)] backdrop-blur-xl;
+  }
+  .glass-button {
+    @apply glass rounded-2xl bg-gradient-to-br from-blush-400/85 via-blush-500/85 to-gold-500/70 text-white backdrop-blur-xl;
+  }
+  .gold-text {
+    @apply bg-gradient-to-b from-gold-300 to-gold-600 bg-clip-text text-transparent;
+  }
 }
