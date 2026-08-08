@@ -25,6 +25,11 @@ export function IntroScreen({ onContinue }: { onContinue: () => void }) {
               vida. No soy perfecto, pero sé que puedo estar para ti en lo que necesites, y quiero que seas parte
               de mi vida.
             </p>
+            <p>
+              Me gusta mucho pasar el tiempo contigo; genuinamente eres muy graciosa e inteligente, cualidades y
+              dones que quiero en mi vida. Espero poder seguir sumando más tiempo juntos. Sé que no siempre van a
+              ser buenos tiempos, pero sé que podemos con todo, princesa.
+            </p>
             <p>Por eso quiero que pases a la siguiente pantalla...</p>
           </motion.div>
 
